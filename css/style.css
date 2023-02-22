@@ -1,0 +1,33 @@
+.wrapper {
+    display: flex;
+}
+
+#left, #right {
+    height: 100vh;
+}
+
+#left {
+    width: 30%;
+    background-color: #434244;
+    padding: 5em 5em;
+    display: flex;
+    flex-direction: column;
+}
+
+#left h2, #left p {
+    color: #fff;
+}
+
+#right {
+    width: 70%;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+img {
+    border-radius: 50%;
+    align-self: center;
+}
+
