@@ -15,6 +15,14 @@
     justify-content: center;
 }
 
+.vertical-line-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: #434244;
+    float: left;
+}
+
 .icon {
     width: 25px;
     height: 25px;
@@ -36,11 +44,37 @@
     width: 50%;
 }
 
+#experiences-wrapper, #education-wrapper {
+    display: flex;
+}
+
+#experiences-wrapper h2, #education-wrapper h2 {
+    border-bottom: none;
+    color: #636466 !important;
+}
+
+#experiences-wrapper p {
+    color: #808183;
+}
+
+#experiences-wrapper-left, #education-wrapper-left {
+    width: 30%;
+}
+
+#experiences-wrapper-right, #education-wrapper-right {
+    width: 70%;
+}
+
+#experiences-wrapper-right h2 {
+    text-transform: none;
+}
+
 #left, #right {
     height: 100vh;
 }
 
 #left {
+    position: fixed;
     width: 30%;
     background-color: #434244;
     padding: 5em 5em;
@@ -66,6 +100,7 @@
 
 #right {
     width: 70%;
+    margin-left: 30%;
     padding: 5em 5em;
     display: flex;
     flex-direction: column;
@@ -74,6 +109,13 @@
 #contact-informations p {
     line-height: 2.5em;
     color: #76777A;
+}
+
+#divider {
+    border-left: 2px solid #434244;
+    margin-top: 120px;
+    margin-right: 2em;
+    height: 650px;
 }
 
 /* selecteurs html */
