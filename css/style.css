@@ -15,14 +15,6 @@
     justify-content: center;
 }
 
-.vertical-line-circle {
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
-    background: #434244;
-    float: left;
-}
-
 .icon {
     width: 25px;
     height: 25px;
@@ -44,6 +36,27 @@
     width: 50%;
 }
 
+#contact-informations p {
+    line-height: 2.5em;
+    padding-bottom: .5em;
+    color: #76777A;
+}
+
+#divers {
+    margin-top: 9em;
+}
+
+#divider {
+    border-left: 2px solid #434244;
+    margin-top: 120px;
+    margin-right: 2em;
+    height: 850px;
+}
+
+#education-wrapper #divider {
+    height: 800px;
+}
+
 #experiences-wrapper, #education-wrapper {
     display: flex;
 }
@@ -53,7 +66,7 @@
     color: #636466 !important;
 }
 
-#experiences-wrapper p {
+#experiences-wrapper p, #education-wrapper p {
     color: #808183;
 }
 
@@ -67,6 +80,19 @@
 
 #experiences-wrapper-right h2 {
     text-transform: none;
+}
+
+#kercia {
+    margin-top: 7em;
+}
+
+#languages {
+    display: flex;
+    justify-content: center;
+}
+
+#languages li {
+    margin-right: 1em;
 }
 
 #left, #right {
@@ -94,8 +120,20 @@
     color: #fff;
 }
 
+#left img {
+    border-radius: 50%;
+}
+
 #name-and-title {
     width: 50%;
+}
+
+#oclock {
+    margin-top: 6em;
+}
+
+#opquast {
+    margin-top: 7em;
 }
 
 #right {
@@ -106,16 +144,13 @@
     flex-direction: column;
 }
 
-#contact-informations p {
-    line-height: 2.5em;
-    color: #76777A;
+#sainte-therese {
+    margin-top: 7em;
 }
 
-#divider {
-    border-left: 2px solid #434244;
-    margin-top: 120px;
-    margin-right: 2em;
-    height: 650px;
+#skills, #hobbies {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* selecteurs html */
@@ -124,6 +159,15 @@ body {
     font-family: 'Bebas Neue', cursive;
     font-family: 'Expletus Sans', cursive;
     font-family: 'Open Sans', sans-serif;
+}
+
+footer {
+    margin: 5em 0;
+    text-align: center;
+}
+
+footer p {
+    color: #434244;
 }
 
 h1 {
@@ -147,8 +191,14 @@ header {
 }
 
 img {
-    border-radius: 50%;
     align-self: center;
+}
+
+li {
+    text-transform: uppercase;
+    font-weight: bold;
+    list-style-type: none;
+    color: #808183;
 }
 
 main h2 {
@@ -156,3 +206,39 @@ main h2 {
     border-bottom: 2px solid #434244;
 }
 
+
+/* responsive */
+
+@media (max-width: 400px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    #contact-informations {
+        width: 100%;
+    }
+
+    #name-and-title {
+        width: 100%;
+    }
+
+    #left {
+        position: unset;
+    }
+
+    #left, #right {
+        width: 100%;
+    }
+
+    #right {
+        margin-left: 0;
+    }
+
+    h1 {
+        width: 100%;
+    }
+
+    header {
+        display: block;
+    }
+}
