@@ -188,13 +188,91 @@ main h2 {
 
 /* responsive */
 
+@media (max-width: 1200px) {
+    .divider {
+        border-bottom: 2px solid #434244;
+        width: inherit;
+        margin-top: 2em;
+    }
+
+    .first-sub-wrapper {
+        border-top: none !important;
+    }
+
+    .sub-wrapper {
+        flex-direction: column;
+        margin-top: 3em;
+        border-top: 2px dashed #808183;;
+    }
+
+    .sub-wrapper-left{
+        width: 100%;
+    }
+    
+    .sub-wrapper-right {
+        width: 100%;
+    }
+
+    #hobbies {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #left {
+        padding: 3em 3em;
+        width: 40%;
+    }
+
+    #right {
+        width: 60%;
+        margin-left: 40%;
+    }
+
+    main h2 {
+        margin-top: 2em;
+    }
+}
+
+@media (max-width: 900px) {
+    #left a {
+        width: 5em;
+    }
+
+    #skills {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    #languages {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
 @media (max-width: 400px) {
+    .circle {
+        margin-left: 40%;
+    }
+
     .wrapper {
         flex-direction: column;
     }
 
     #contact-informations {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #contact-informations p {
+        text-align: center;
+    }
+
+    #hobbies, #skills, #languages {
+        text-align: left;
     }
 
     #name-and-title {
@@ -217,7 +295,15 @@ main h2 {
         width: 100%;
     }
 
+    h1, h3 {
+        text-align: center;
+    }
+
     header {
         display: block;
+    }
+
+    ul {
+        padding-left: 0;
     }
 }
