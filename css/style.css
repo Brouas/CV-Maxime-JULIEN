@@ -15,6 +15,41 @@
     justify-content: center;
 }
 
+.divider {
+    border-left: 2px solid #434244;
+    margin-right: 2em;
+    height: inherit;
+}
+
+.sub-wrapper {
+    display: flex;
+}
+
+.sub-wrapper h2 {
+    border-bottom: none;
+    color: #636466 !important;
+}
+
+.sub-wrapper p {
+    color: #808183;
+}
+
+.sub-wrapper-left{
+    width: 30%;
+}
+
+.sub-wrapper-right {
+    width: 70%;
+}
+
+.sub-wrapper-right h2 {
+    text-transform: none;
+}
+
+.first-divider {
+    margin-top: 120px;
+}
+
 .icon {
     width: 25px;
     height: 25px;
@@ -40,50 +75,6 @@
     line-height: 2.5em;
     padding-bottom: .5em;
     color: #76777A;
-}
-
-#divers {
-    margin-top: 9em;
-}
-
-#divider {
-    border-left: 2px solid #434244;
-    margin-top: 120px;
-    margin-right: 2em;
-    height: 850px;
-}
-
-#education-wrapper #divider {
-    height: 800px;
-}
-
-#experiences-wrapper, #education-wrapper {
-    display: flex;
-}
-
-#experiences-wrapper h2, #education-wrapper h2 {
-    border-bottom: none;
-    color: #636466 !important;
-}
-
-#experiences-wrapper p, #education-wrapper p {
-    color: #808183;
-}
-
-#experiences-wrapper-left, #education-wrapper-left {
-    width: 30%;
-}
-
-#experiences-wrapper-right, #education-wrapper-right {
-    width: 70%;
-}
-
-#experiences-wrapper-right h2 {
-    text-transform: none;
-}
-
-#kercia {
-    margin-top: 7em;
 }
 
 #languages {
@@ -128,24 +119,12 @@
     width: 50%;
 }
 
-#oclock {
-    margin-top: 6em;
-}
-
-#opquast {
-    margin-top: 7em;
-}
-
 #right {
     width: 70%;
     margin-left: 30%;
     padding: 5em 5em;
     display: flex;
     flex-direction: column;
-}
-
-#sainte-therese {
-    margin-top: 7em;
 }
 
 #skills, #hobbies {
